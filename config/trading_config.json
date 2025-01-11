@@ -1,0 +1,25 @@
+{
+    "strategy_params": {
+        "short_window": 50,
+        "long_window": 200,
+        "max_position_size": 0.1
+    },
+    "api_config": {
+        "base_url": "https://api.yourtradingplatform.com",
+        "api_key": "your_api_key_for_trading_api"
+    },
+    "database": {
+        "path": "logs/citadel.db"
+    },
+    "broker_api": {
+        "host": "broker-api.yourtradingplatform.com",
+        "port": 443,
+        "secure": true
+    },
+    "portfolio_value": 10000.00,
+    "symbols": ["BTCUSD", "ETHUSD"],
+    "risk_management": {
+        "max_daily_loss": 200,
+        "stop_loss_percentage": 0.05
+    }
+}

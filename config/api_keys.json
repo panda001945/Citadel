@@ -1,0 +1,5 @@
+{
+    "exchange_api_key": "your_exchange_api_key_here",
+    "exchange_api_secret": "your_exchange_api_secret_here",
+    "other_service_api_key": "another_api_key"
+}
