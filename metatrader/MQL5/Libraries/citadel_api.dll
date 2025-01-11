@@ -1,0 +1,18 @@
+#include <windows.h>
+
+extern "C" {
+    __declspec(dllexport) bool __stdcall CitadelInit() {
+        // Example: connect to Citadel, load configuration, etc.
+        return true;  // Return true if initialization was successful
+    }
+
+    __declspec(dllexport) void __stdcall CitadelDeinit() {
+        // Cleanup resources, close connections etc.
+    }
+
+    __declspec(dllexport) const char* __stdcall CitadelGetSignal() {
+        // Logic to get the trading signal from Citadel or from local strategy
+        static char signal[] = "BUY";
+        return signal;
+    }
+}

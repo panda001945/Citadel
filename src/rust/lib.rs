@@ -4,8 +4,8 @@ mod utils;
 use log::{info, error};
 use utils::database_logger::DatabaseLogger;
 
-// This is a placeholder for integrating Rust with C++ if needed. In reality, 
-// you might use FFI (Foreign Function Interface) to call Rust from C++ or vice versa.
+// Placeholder for integrating Rust with C++ if needed. In reality, 
+// might use FFI (Foreign Function Interface) to call Rust from C++ or vice versa.
 pub fn init_rust_components() {
     let rt = tokio::runtime::Runtime::new().unwrap();
     rt.block_on(async {

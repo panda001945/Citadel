@@ -1,0 +1,21 @@
+#include <windows.h>
+
+// This is a placeholder for DLL functions. You'll need to compile this into a DLL.
+extern "C" {
+    __declspec(dllexport) bool __stdcall CitadelInit() {
+        // Example: connect to Citadel, load configuration, etc.
+        // Here you would initialize any necessary communication or state
+        return true;  // Return true if initialization was successful
+    }
+
+    __declspec(dllexport) void __stdcall CitadelDeinit() {
+        // Cleanup resources, close connections etc.
+    }
+
+    __declspec(dllexport) const char* __stdcall CitadelGetSignal() {
+        // Logic to get the trading signal from Citadel or from local strategy
+        // Here, we're just returning a static string for demonstration
+        static char signal[] = "BUY";
+        return signal;
+    }
+}
